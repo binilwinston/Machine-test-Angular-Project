@@ -1,0 +1,40 @@
+<form class="example-form" [formGroup]="customerform" (ngSubmit)="SaveCompany()">
+    <mat-card>
+        <mat-card-content>
+
+
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>customerCode</mat-label>
+                <input matInput placeholder="customerCode" formControlName="customerCode">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>name</mat-label>
+                <input matInput placeholder="name" formControlName="name">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label> address</mat-label>
+                <input matInput placeholder="address" formControlName="address">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>email</mat-label>
+                <input matInput placeholder="email" formControlName="email">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>mobileNo</mat-label>
+                <input matInput placeholder="mobileNo" formControlName="mobileNo">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>geoLocation</mat-label>
+                <input matInput placeholder="geoLocation" formControlName="geoLocation">
+            </mat-form-field>
+        </mat-card-content>
+        <mat-card-footer>
+            
+            <div class="example-button-row" style="margin: 2px">
+                <button mat-raised-button color="primary">Save</button> | <a (click)="closepopup()" mat-raised-button
+                    color="accent">Close</a>
+            
+        </div>
+        </mat-card-footer>
+    </mat-card>
+</form>
